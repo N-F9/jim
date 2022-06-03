@@ -1,9 +1,18 @@
-JIM
+JIM v0.1
 
 → Abstraction
 Jim provides tools that the Ti-84 Plus CE does not, like solving triangles. Jim will not have the funcationality to solve polynomials (use the polynomial root finder from Ti), for example.
 
-→ Tools Pre-Installed on the TI-84
+→ Pre-Installed Tools on the TI-84
+- arithmetic, trig, & piecewise
+- science tools & periodic table
+- graphing, features w/ variables, inequalities, & conics
+- polynomial root finder & systems of equations
+- calculus:
+	- summation
+	- integrals
+	- derivatives
+- statisitics
 
 → Tools Jim Provides
 
