@@ -19,6 +19,7 @@ Jim provides tools that the Ti-84 Plus CE does not, like solving triangles. Jim 
 - areas & perimeters
 - unit circle
 - simplify racials
+	- Finished using the simple algorithm from https://stackoverflow.com/a/10492893
 - distance, midpoint, slope, equation for 2 points
 - polynomial divider
 
