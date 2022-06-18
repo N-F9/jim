@@ -21,6 +21,7 @@ Jim provides tools that the Ti-84 Plus CE does not, like solving triangles. Jim 
 - simplify racials
 	- Finished using the simple algorithm from https://stackoverflow.com/a/10492893
 - distance, midpoint, slope, equation for 2 points
+	- Finished
 - polynomial divider
 
 → Credits
