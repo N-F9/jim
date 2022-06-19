@@ -17,6 +17,7 @@ Jim provides tools that the Ti-84 Plus CE does not, like solving triangles. Jim 
 → Tools Jim Provides
 - solving triagles w/ ambiguous cases
 - shapes (areas & perimeters)
+	- Finished
 - unit circle
 	- Finished
 - simplify racials (https://stackoverflow.com/a/10492893)
