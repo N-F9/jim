@@ -3,6 +3,7 @@ PROPOSAL v0.2
 → Added Features
 - Convert to C
 - Rework UI 
+- solving triagles w/ ambiguous cases
 
 → Removed Features
 - The old UI

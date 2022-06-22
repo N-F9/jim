@@ -1,7 +1,6 @@
 CHANGELOG v0.1
 
 → Added Features
-- solving triagles w/ ambiguous cases
 - shapes (areas & perimeters)
 - unit circle
 - simplify racials (https://stackoverflow.com/a/10492893)
