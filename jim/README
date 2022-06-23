@@ -1,4 +1,4 @@
-JIM v0.2
+JIM v0.1
 
 → Abstraction
 Jim provides tools that the Ti-84 Plus CE does not, like solving triangles. Jim will not have the funcationality to solve polynomials (use the polynomial root finder from Ti), for example.
@@ -15,7 +15,6 @@ Jim provides tools that the Ti-84 Plus CE does not, like solving triangles. Jim 
 - statisitics
 
 → Tools Jim Provides
-- solving triagles w/ ambiguous cases
 - shapes (areas & perimeters)
 - unit circle
 - simplify racials
