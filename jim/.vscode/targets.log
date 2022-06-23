@@ -5,9 +5,8 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
- 
 
-# Make data base, printed on Thu Jun 23 08:23:48 2022
+# Make data base, printed on Thu Jun 23 11:39:39 2022
 
 # Variables
 
@@ -28,7 +27,6 @@ ICONSRC = $(call NATIVEPATH,$(OBJDIR)/icon.src)
 # makefile (from '/home/nick/CEdev/meta/makefile.mk', line 244)
 EZLTOFLAGS = $(EZLLVMFLAGS) $(LTOFLAGS)
 # makefile (from '/home/nick/CEdev/meta/makefile.mk', line 98)
- 
 CONVBIN = $(call NATIVEPATH,$(BIN)/convbin)
 # environment
 GJS_DEBUG_OUTPUT = stderr
@@ -39,7 +37,7 @@ LINK = $(call NATIVEPATH,$(BIN)/ez80-link)
 # makefile (from '/home/nick/CEdev/meta/makefile.mk', line 247)
 FASMGFLAGS = $(FASMG_V) $(call QUOTE_ARG,$(call NATIVEPATH,$(CEDEV_TOOLCHAIN)/meta/ld.alm)) -i $(call QUOTE_ARG,DEBUG := $(LDDEBUG)) -i $(call QUOTE_ARG,HAS_PRINTF := $(LDHAS_PRINTF)) -i $(call QUOTE_ARG,HAS_LIBC := $(LDHAS_LIBC)) -i $(call QUOTE_ARG,HAS_LIBCXX := $(LDHAS_LIBCXX)) -i $(call QUOTE_ARG,PREFER_OS_CRT := $(LDPREFER_OS_CRT)) -i $(call QUOTE_ARG,PREFER_OS_LIBC := $(LDPREFER_OS_LIBC)) -i $(call QUOTE_ARG,include $(call FASMG_FILES,$(LINKER_SCRIPT))) -i $(call QUOTE_ARG,range .bss $$$(BSSHEAP_LOW) : $$$(BSSHEAP_HIGH)) -i $(call QUOTE_ARG,provide __stack = $$$(STACK_HIGH)) -i $(call QUOTE_ARG,locate .header at $$$(INIT_LOC)) $(LDMAPFLAG) -i $(call QUOTE_ARG,source $(LDICON)$(call FASMG_FILES,$(LDFILES))) -i $(call QUOTE_ARG,library $(LDLIBS)) $(EXTRA_LDFLAGS)
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-ba627e24-68c9-4be5-811c-39366ce10e41.sock
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-a07d3d98-4f9e-4567-ae6c-bf31dad86677.sock
 # makefile (from '/home/nick/CEdev/meta/makefile.mk', line 212)
 CONVBINFLAGS = -r -k 8xp -u -n $(NAME)
 # makefile (from '/home/nick/CEdev/meta/makefile.mk', line 153)
@@ -47,7 +45,6 @@ LINK_CPPSOURCES = $(call UPDIR_ADD,$(CPPSOURCES:%.$(CPP_EXTENSION)=$(OBJDIR)/%.$
 # environment
 VSCODE_CWD = /home/nick
 # makefile (from '/home/nick/CEdev/meta/makefile.mk', line 236)
- 
 LDHAS_PRINTF := 1
 # makefile (from '/home/nick/CEdev/meta/makefile.mk', line 125)
 TARGETMAP = $(NAME).map
@@ -172,8 +169,7 @@ VSCODE_VERBOSE_LOGGING = true
 # makefile (from '/home/nick/CEdev/meta/makefile.mk', line 190)
 LDICON = $(call FASMG_FILES,$(ICONSRC))$(comma)$(space)
 # environment
-VSCODE_PID = 5250
- 
+VSCODE_PID = 25676
 # environment
 XDG_SESSION_TYPE = wayland
 # automatic
@@ -283,6 +279,7 @@ FASMG_FILES = $(subst $(space),$(comma) ,$(patsubst %,"%",$(subst ",\",$(subst \
 # environment
 XDG_CURRENT_DESKTOP = GNOME
 # automatic
+ 
 +F = $(notdir $+)
 # environment
 DESKTOP_SESSION = gnome
@@ -296,7 +293,6 @@ C_EXTENSION = c
 LOGNAME = nick
 # makefile (from '/home/nick/CEdev/meta/makefile.mk', line 56)
 empty := 
- 
 # environment
 GIO_LAUNCHED_DESKTOP_FILE = /usr/share/applications/code.desktop
 # makefile (from '/home/nick/CEdev/meta/makefile.mk', line 38)
@@ -334,7 +330,7 @@ which_declare = declare -f
 # environment
 DEBUGINFOD_URLS = https://debuginfod.fedoraproject.org/ 
 # environment
-GIO_LAUNCHED_DESKTOP_FILE_PID = 5250
+GIO_LAUNCHED_DESKTOP_FILE_PID = 25676
 # makefile (from '/home/nick/CEdev/meta/makefile.mk', line 141)
 EXTRA_ASM_SOURCES = $(EXTRA_ASMSOURCES)
 # environment
@@ -403,7 +399,6 @@ CXXFLAGS = -Wall -Wextra -Oz
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell nocomment grouped-target extra-prereqs archives jobserver output-sync check-symlink guile load
 # makefile (from '/home/nick/CEdev/meta/makefile.mk', line 130)
 LDCRT0 = $(call NATIVEPATH,$(CEDEV_TOOLCHAIN)/lib/crt/crt0.src)
- 
 # makefile (from '/home/nick/CEdev/meta/makefile.mk', line 101)
 CC = $(call NATIVEPATH,$(BIN)/ez80-clang)
 # makefile (from '/home/nick/CEdev/meta/makefile.mk', line 241)
@@ -517,7 +512,6 @@ obj/lto.bc: obj/src/main.c.bc
 #  Last modified 2022-06-22 21:43:50.959245038
 #  File has been updated.
 #  Successfully updated.
- 
 # variable set hash-table stats:
 # Load=0/32=0%, Rehash=0, Collisions=0/2=0%
 #  recipe to execute (from '/home/nick/CEdev/meta/makefile.mk', line 324):
@@ -605,7 +599,6 @@ all: bin/JIM.8xp
 #  Successfully updated.
 
 test:
- 
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
@@ -661,6 +654,7 @@ makefile:
 /home/nick/CEdev/include/cdefs.h:
 #  Implicit rule search has been done.
 #  Last modified 2022-06-03 18:47:29
+ 
 #  File has been updated.
 #  Successfully updated.
 
@@ -722,6 +716,6 @@ bin/JIM.8xp: bin/JIM.bin makefile /home/nick/CEdev/meta/makefile.mk
 # strcache performance: lookups = 106 / hit rate = 50%
 # hash-table stats:
 # Load=52/8192=1%, Rehash=0, Collisions=0/106=0%
-# Finished Make data base on Thu Jun 23 08:23:48 2022
+# Finished Make data base on Thu Jun 23 11:39:39 2022
 
  
