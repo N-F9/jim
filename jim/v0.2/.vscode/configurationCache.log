@@ -1,0 +1,1 @@
+{"buildTargets":["all","bin/JIM.8xp","bin/JIM.bin","clean","debug","gfx","obj/icon.src","obj/lto.bc","obj/lto.src","obj/src/main.c.bc","test","version"],"launchTargets":["/home/nick/Documents/Github/ti-84-programs/jim/v0.2>a.out()"],"customConfigurationProvider":{"workspaceBrowse":{"browsePath":[],"compilerArgs":[]},"fileIndex":[]}}
