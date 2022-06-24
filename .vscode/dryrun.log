@@ -8,7 +8,7 @@ echo [lto opt] obj/lto.bc
 /home/nick/CEdev/bin/ez80-clang -S -mllvm -profile-guided-section-prefix=false -Wall -Wextra -Oz '/home/nick/Documents/Github/ti-84-programs/obj/lto.bc' -o '/home/nick/Documents/Github/ti-84-programs/obj/lto.src'
 mkdir -p 'obj'
 echo [convimg] description
-/home/nick/CEdev/bin/convimg --icon-output 'obj/icon.src' --icon-format asm --icon-description "JIM"
+/home/nick/CEdev/bin/convimg --icon-output 'obj/icon.src' --icon-format asm --icon-description "Various math programs"
 mkdir -p 'bin'
 echo [linking] bin/JIM.bin
 /home/nick/CEdev/bin/fasmg -n '/home/nick/CEdev/meta/ld.alm' -i 'DEBUG := 0' -i 'HAS_PRINTF := 1' -i 'HAS_LIBC := 1' -i 'HAS_LIBCXX := 1' -i 'PREFER_OS_CRT := 0' -i 'PREFER_OS_LIBC := 1' -i 'include "/home/nick/CEdev/meta/linker_script"' -i 'range .bss $D052C6 : $D13FD8' -i 'provide __stack = $D1A87E' -i 'locate .header at $D1A87F' -i map -i 'source "obj/icon.src", "/home/nick/CEdev/lib/crt/crt0.src", "obj/lto.src"' -i 'library "/home/nick/CEdev/lib/libload/fileioc.lib", "/home/nick/CEdev/lib/libload/fontlibc.lib", "/home/nick/CEdev/lib/libload/graphx.lib", "/home/nick/CEdev/lib/libload/keypadc.lib"'  bin/JIM.bin
