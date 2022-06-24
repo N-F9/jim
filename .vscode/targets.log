@@ -6,7 +6,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Thu Jun 23 11:39:39 2022
+# Make data base, printed on Fri Jun 24 11:59:56 2022
 
 # Variables
 
@@ -37,7 +37,7 @@ LINK = $(call NATIVEPATH,$(BIN)/ez80-link)
 # makefile (from '/home/nick/CEdev/meta/makefile.mk', line 247)
 FASMGFLAGS = $(FASMG_V) $(call QUOTE_ARG,$(call NATIVEPATH,$(CEDEV_TOOLCHAIN)/meta/ld.alm)) -i $(call QUOTE_ARG,DEBUG := $(LDDEBUG)) -i $(call QUOTE_ARG,HAS_PRINTF := $(LDHAS_PRINTF)) -i $(call QUOTE_ARG,HAS_LIBC := $(LDHAS_LIBC)) -i $(call QUOTE_ARG,HAS_LIBCXX := $(LDHAS_LIBCXX)) -i $(call QUOTE_ARG,PREFER_OS_CRT := $(LDPREFER_OS_CRT)) -i $(call QUOTE_ARG,PREFER_OS_LIBC := $(LDPREFER_OS_LIBC)) -i $(call QUOTE_ARG,include $(call FASMG_FILES,$(LINKER_SCRIPT))) -i $(call QUOTE_ARG,range .bss $$$(BSSHEAP_LOW) : $$$(BSSHEAP_HIGH)) -i $(call QUOTE_ARG,provide __stack = $$$(STACK_HIGH)) -i $(call QUOTE_ARG,locate .header at $$$(INIT_LOC)) $(LDMAPFLAG) -i $(call QUOTE_ARG,source $(LDICON)$(call FASMG_FILES,$(LDFILES))) -i $(call QUOTE_ARG,library $(LDLIBS)) $(EXTRA_LDFLAGS)
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-a07d3d98-4f9e-4567-ae6c-bf31dad86677.sock
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-d833173b-b513-4aff-8673-e1813256487a.sock
 # makefile (from '/home/nick/CEdev/meta/makefile.mk', line 212)
 CONVBINFLAGS = -r -k 8xp -u -n $(NAME)
 # makefile (from '/home/nick/CEdev/meta/makefile.mk', line 153)
@@ -73,7 +73,7 @@ VSCODE_HANDLES_UNCAUGHT_ERRORS = true
 # default
 .VARIABLES := 
 # environment
-PWD = /home/nick/Documents/Github/ti-84-programs/jim/v0.2
+PWD = /home/nick/Documents/Github/ti-84-programs
 # automatic
 %D = $(patsubst %/,%,$(dir $%))
 # environment
@@ -101,7 +101,7 @@ DEPFILES = $(wildcard $(LINK_CSOURCES:%.bc=%.d) $(LINK_CPPSOURCES:%.bc=%.d))
 # environment
 LANG = C
 # environment
-XAUTHORITY = /run/user/1000/.mutter-Xwaylandauth.TWLHO1
+XAUTHORITY = /run/user/1000/.mutter-Xwaylandauth.6OVJO1
 # default
 .LOADED := 
 # default
@@ -121,7 +121,7 @@ NATIVEMKDR = mkdir -p $1
 # makefile (from '/home/nick/CEdev/meta/makefile.mk', line 28)
 INIT_LOC = D1A87F
 # makefile
-CURDIR := /home/nick/Documents/Github/ti-84-programs/jim/v0.2
+CURDIR := /home/nick/Documents/Github/ti-84-programs
 # makefile (from '/home/nick/CEdev/meta/makefile.mk', line 40)
 CUSTOM_FILE_FILE = stdio_file.h
 # environment
@@ -156,8 +156,8 @@ TARGETBIN = $(NAME).bin
 XDG_SESSION_DESKTOP = gnome
 # makefile (from '/home/nick/CEdev/meta/makefile.mk', line 216)
 LDMAPFLAG := -i map
-# makefile (from 'obj/src/main.c.d', line 1)
-MAKEFILE_LIST := makefile /home/nick/CEdev/meta/makefile.mk obj/src/main.c.d
+# makefile (from '/home/nick/CEdev/meta/makefile.mk', line 1)
+MAKEFILE_LIST := makefile /home/nick/CEdev/meta/makefile.mk
 # automatic
 @F = $(notdir $@)
 # makefile (from '/home/nick/CEdev/meta/makefile.mk', line 25)
@@ -169,7 +169,7 @@ VSCODE_VERBOSE_LOGGING = true
 # makefile (from '/home/nick/CEdev/meta/makefile.mk', line 190)
 LDICON = $(call FASMG_FILES,$(ICONSRC))$(comma)$(space)
 # environment
-VSCODE_PID = 25676
+VSCODE_PID = 19595
 # environment
 XDG_SESSION_TYPE = wayland
 # automatic
@@ -187,7 +187,7 @@ EZCFLAGS = $(EZCOMMONFLAGS) $(CFLAGS)
 # makefile (from '/home/nick/CEdev/meta/makefile.mk', line 110)
 UPDIR_ADD = $(subst ../,_../,$(subst \,/,$1))
 # environment
-SESSION_MANAGER = local/unix:@/tmp/.ICE-unix/2497,unix/unix:/tmp/.ICE-unix/2497
+SESSION_MANAGER = local/unix:@/tmp/.ICE-unix/2778,unix/unix:/tmp/.ICE-unix/2778
 # automatic
 *F = $(notdir $*)
 # makefile (from '/home/nick/CEdev/meta/makefile.mk', line 152)
@@ -251,7 +251,7 @@ STACK_HIGH = D1A87E
 # makefile (from '/home/nick/CEdev/meta/makefile.mk', line 58)
 comma := ,
 # environment
-INVOCATION_ID = 14efb66a846546e28e8305c2b90d034e
+INVOCATION_ID = 644f3ca8f68e4ab7ac64bc326c280724
 # makefile (from '/home/nick/CEdev/meta/makefile.mk', line 127)
 ICONIMG := 
 # makefile (from '/home/nick/CEdev/meta/makefile.mk', line 97)
@@ -277,9 +277,9 @@ FASMG_V := -n
 # makefile (from '/home/nick/CEdev/meta/makefile.mk', line 114)
 FASMG_FILES = $(subst $(space),$(comma) ,$(patsubst %,"%",$(subst ",\",$(subst \,\\,$(call NATIVEPATH,$1)))))
 # environment
+ 
 XDG_CURRENT_DESKTOP = GNOME
 # automatic
- 
 +F = $(notdir $+)
 # environment
 DESKTOP_SESSION = gnome
@@ -302,7 +302,7 @@ CPP_EXTENSION = cpp
 # makefile (from '/home/nick/CEdev/meta/makefile.mk', line 57)
 space := $(subst ,, )
 # environment
-SYSTEMD_EXEC_PID = 2553
+SYSTEMD_EXEC_PID = 2833
 # makefile (from '/home/nick/CEdev/meta/makefile.mk', line 103)
 RM = rm -f $1
 # makefile (from '/home/nick/CEdev/meta/makefile.mk', line 144)
@@ -324,13 +324,13 @@ GFXDIR := src/gfx
 # makefile (from '/home/nick/CEdev/meta/makefile.mk', line 126)
 TARGET8XP = $(NAME).8xp
 # environment
-MANAGERPID = 1318
+MANAGERPID = 2586
 # environment
 which_declare = declare -f
 # environment
 DEBUGINFOD_URLS = https://debuginfod.fedoraproject.org/ 
 # environment
-GIO_LAUNCHED_DESKTOP_FILE_PID = 25676
+GIO_LAUNCHED_DESKTOP_FILE_PID = 19595
 # makefile (from '/home/nick/CEdev/meta/makefile.mk', line 141)
 EXTRA_ASM_SOURCES = $(EXTRA_ASMSOURCES)
 # environment
@@ -350,7 +350,7 @@ OUTPUT_MAP = YES
 # makefile (from '/home/nick/CEdev/meta/makefile.mk', line 233)
 LDHAS_LIBCXX := 1
 # environment
-JOURNAL_STREAM = 8:37948
+JOURNAL_STREAM = 8:35370
 # makefile (from '/home/nick/CEdev/meta/makefile.mk', line 47)
 PREFER_OS_CRT = NO
 # environment
@@ -416,7 +416,7 @@ GDMSESSION = gnome
 # makefile (from '/home/nick/CEdev/meta/makefile.mk', line 135)
 rwildcard = $(strip $(foreach d,$(wildcard $1/*),$(call rwildcard,$d,$2) $(filter $(subst %%,%,%$(subst *,%,$2)),$d)))
 # variable set hash-table stats:
-# Load=200/1024=20%, Rehash=0, Collisions=39/525=7%
+# Load=200/1024=20%, Rehash=0, Collisions=40/566=7%
 
 # Pattern-specific Variable Values
 
@@ -425,12 +425,12 @@ rwildcard = $(strip $(foreach d,$(wildcard $1/*),$(call rwildcard,$d,$2) $(filte
 # Directories
 
 # /home/nick/CEdev/meta (device 40, inode 8522154): No files, no impossibilities so far.
-# src (device 40, inode 8519661): 3 files, no impossibilities.
-# . (device 40, inode 8519542): 10 files, no impossibilities.
+# src (device 40, inode 8566113): 3 files, no impossibilities.
+# . (device 40, inode 8519477): 9 files, no impossibilities.
 # /home/nick/CEdev/lib/libload (device 40, inode 8521210): 7 files, no impossibilities.
-# src/main.c (device 40, inode 8519662): could not be opened.
+# src/main.c (device 40, inode 8566114): could not be opened.
 
-# 20 files, no impossibilities in 5 directories.
+# 19 files, no impossibilities in 5 directories.
 
 # Implicit Rules
 
@@ -475,13 +475,6 @@ debug: bin/JIM.8xp
 # variable set hash-table stats:
 # Load=3/32=9%, Rehash=0, Collisions=0/4=0%
 
-# Not a target:
-/home/nick/CEdev/include/ti/getcsc.h:
-#  Implicit rule search has been done.
-#  Last modified 2022-06-03 18:47:29
-#  File has been updated.
-#  Successfully updated.
-
 version:
 #  Phony target (prerequisite of .PHONY).
 #  Implicit rule search has not been done.
@@ -489,13 +482,6 @@ version:
 #  File has not been updated.
 #  recipe to execute (from '/home/nick/CEdev/meta/makefile.mk', line 304):
 	$(Q)echo CE C/C++ Toolchain $(shell cedev-config --version)
-
-# Not a target:
-/home/nick/CEdev/include/stdbool.h:
-#  Implicit rule search has been done.
-#  Last modified 2022-06-03 18:47:29
-#  File has been updated.
-#  Successfully updated.
 
 clean:
 #  Phony target (prerequisite of .PHONY).
@@ -509,26 +495,19 @@ clean:
 
 obj/lto.bc: obj/src/main.c.bc
 #  Implicit rule search has not been done.
-#  Last modified 2022-06-22 21:43:50.959245038
+#  File does not exist.
 #  File has been updated.
-#  Successfully updated.
+#  Needs to be updated (-q is set).
 # variable set hash-table stats:
-# Load=0/32=0%, Rehash=0, Collisions=0/2=0%
+# Load=0/32=0%, Rehash=0, Collisions=0/45=0%
 #  recipe to execute (from '/home/nick/CEdev/meta/makefile.mk', line 324):
 	$(Q)echo [lto opt] $(call NATIVEPATH,$@)
 	$(Q)$(LINK) $(foreach d,$^,$(call QUOTE_ARG,$(addprefix $(CURDIR)/,$d))) -o $(call QUOTE_ARG,$(addprefix $(CURDIR)/,$@))
 
 # Not a target:
-/home/nick/CEdev/include/graphx.h:
-#  Implicit rule search has been done.
-#  Last modified 2022-06-03 18:47:29
-#  File has been updated.
-#  Successfully updated.
-
-# Not a target:
 src/main.c:
 #  Implicit rule search has been done.
-#  Last modified 2022-06-22 21:43:47.827271697
+#  Last modified 2022-06-23 11:42:51.853233921
 #  File has been updated.
 #  Successfully updated.
 
@@ -539,12 +518,14 @@ src/main.c:
 #  File has been updated.
 #  Successfully updated.
 
-obj/src/main.c.bc: src/main.c makefile /home/nick/CEdev/meta/makefile.mk src/main.c /home/nick/CEdev/include/math.h /home/nick/CEdev/include/ti/getcsc.h /home/nick/CEdev/include/stdint.h /home/nick/CEdev/include/cdefs.h /home/nick/CEdev/include/stdbool.h /home/nick/CEdev/include/graphx.h /home/nick/CEdev/include/stdlib.h
+# 'override' directive
+obj/src/main.c.bc: .SHELLSTATUS := 0
+obj/src/main.c.bc: src/main.c makefile /home/nick/CEdev/meta/makefile.mk
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'src/main'
-#  Last modified 2022-06-22 21:43:50.955245072
+#  File does not exist.
 #  File has been updated.
-#  Successfully updated.
+#  Needs to be updated (-q is set).
 # automatic
 # @ := obj/src/main.c.bc
 # automatic
@@ -552,17 +533,17 @@ obj/src/main.c.bc: src/main.c makefile /home/nick/CEdev/meta/makefile.mk src/mai
 # automatic
 # < := src/main.c
 # automatic
-# + := src/main.c /home/nick/CEdev/include/math.h /home/nick/CEdev/include/ti/getcsc.h /home/nick/CEdev/include/stdint.h /home/nick/CEdev/include/cdefs.h /home/nick/CEdev/include/stdbool.h /home/nick/CEdev/include/graphx.h /home/nick/CEdev/include/stdlib.h
+# + := src/main.c makefile /home/nick/CEdev/meta/makefile.mk
 # automatic
 # % := 
 # automatic
-# ^ := src/main.c /home/nick/CEdev/include/math.h /home/nick/CEdev/include/ti/getcsc.h /home/nick/CEdev/include/stdint.h /home/nick/CEdev/include/cdefs.h /home/nick/CEdev/include/stdbool.h /home/nick/CEdev/include/graphx.h /home/nick/CEdev/include/stdlib.h
+# ^ := src/main.c makefile /home/nick/CEdev/meta/makefile.mk
 # automatic
-# ? := 
+# ? := src/main.c makefile /home/nick/CEdev/meta/makefile.mk
 # automatic
 # | := 
 # variable set hash-table stats:
-# Load=8/32=25%, Rehash=0, Collisions=1/12=8%
+# Load=9/32=28%, Rehash=0, Collisions=53/69=77%
 #  recipe to execute (from '/home/nick/CEdev/meta/makefile.mk', line 328):
 	$(Q)$(call MKDIR,$(@D))
 	$(Q)echo [compiling] $(call NATIVEPATH,$<)
@@ -575,24 +556,18 @@ obj/src/main.c.bc: src/main.c makefile /home/nick/CEdev/meta/makefile.mk src/mai
 #  File has not been updated.
 
 all: bin/JIM.8xp
+ 
 #  Phony target (prerequisite of .PHONY).
 #  Command line target.
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has been updated.
-#  Successfully updated.
+#  Needs to be updated (-q is set).
 # variable set hash-table stats:
-# Load=0/32=0%, Rehash=0, Collisions=0/2=0%
+# Load=0/32=0%, Rehash=0, Collisions=0/45=0%
 
 # Not a target:
 /home/nick/CEdev/lib/crt/crt0.src:
-#  Implicit rule search has been done.
-#  Last modified 2022-06-03 18:47:29
-#  File has been updated.
-#  Successfully updated.
-
-# Not a target:
-/home/nick/CEdev/include/math.h:
 #  Implicit rule search has been done.
 #  Last modified 2022-06-03 18:47:29
 #  File has been updated.
@@ -605,43 +580,22 @@ test:
 #  recipe to execute (from '/home/nick/CEdev/meta/makefile.mk', line 301):
 	$(Q)$(CEMUTEST) $(call NATIVEPATH,$(CURDIR)/autotest.json)
 
-# Not a target:
-obj/src/main.c.d:
-#  Implicit rule search has been done.
-#  Last modified 2022-06-22 21:43:50.955245072
-#  File has been updated.
-#  Successfully updated.
-
 bin/JIM.bin: /home/nick/CEdev/lib/crt/crt0.src obj/lto.src obj/icon.src makefile /home/nick/CEdev/meta/makefile.mk
 #  Implicit rule search has not been done.
-#  Last modified 2022-06-22 21:43:52.093235385
+#  File does not exist.
 #  File has been updated.
-#  Successfully updated.
+#  Needs to be updated (-q is set).
 # variable set hash-table stats:
-# Load=0/32=0%, Rehash=0, Collisions=0/2=0%
+# Load=0/32=0%, Rehash=0, Collisions=0/45=0%
 #  recipe to execute (from '/home/nick/CEdev/meta/makefile.mk', line 281):
 	$(Q)$(call MKDIR,$(@D))
 	$(Q)echo [linking] $(call NATIVEPATH,$@)
 	$(Q)$(FASMG) $(FASMGFLAGS) $(call NATIVEPATH,$@)
 
 # Not a target:
-/home/nick/CEdev/include/stdlib.h:
-#  Implicit rule search has been done.
-#  Last modified 2022-06-03 18:47:29
-#  File has been updated.
-#  Successfully updated.
-
-# Not a target:
 makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-06-22 19:18:23.381566173
-#  File has been updated.
-#  Successfully updated.
-
-# Not a target:
-/home/nick/CEdev/include/stdint.h:
-#  Implicit rule search has been done.
-#  Last modified 2022-06-03 18:47:29
+#  Last modified 2022-06-23 11:42:51.853233921
 #  File has been updated.
 #  Successfully updated.
 
@@ -649,14 +603,6 @@ makefile:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-
-# Not a target:
-/home/nick/CEdev/include/cdefs.h:
-#  Implicit rule search has been done.
-#  Last modified 2022-06-03 18:47:29
- 
-#  File has been updated.
-#  Successfully updated.
 
 gfx:
 #  Phony target (prerequisite of .PHONY).
@@ -673,19 +619,18 @@ gfx:
 
 obj/lto.src: obj/lto.bc
 #  Implicit rule search has not been done.
-#  Last modified 2022-06-22 21:43:50.970244944
+#  File does not exist.
 #  File has been updated.
-#  Successfully updated.
+#  Needs to be updated (-q is set).
 # variable set hash-table stats:
-# Load=0/32=0%, Rehash=0, Collisions=0/2=0%
+# Load=0/32=0%, Rehash=0, Collisions=0/45=0%
 #  recipe to execute (from '/home/nick/CEdev/meta/makefile.mk', line 321):
 	$(Q)$(CC) -S $(EZLTOFLAGS) $(call QUOTE_ARG,$(addprefix $(CURDIR)/,$<)) -o $(call QUOTE_ARG,$(addprefix $(CURDIR)/,$@))
 
 obj/icon.src: makefile /home/nick/CEdev/meta/makefile.mk
 #  Implicit rule search has not been done.
-#  Last modified 2022-06-22 21:39:34.117431402
-#  File has been updated.
-#  Successfully updated.
+#  Modification time never checked.
+#  File has not been updated.
 #  recipe to execute (from '/home/nick/CEdev/meta/makefile.mk', line 287):
 	$(Q)$(call MKDIR,$(@D))
 	$(Q)echo [convimg] $(or $(ICONIMG),description)
@@ -693,29 +638,29 @@ obj/icon.src: makefile /home/nick/CEdev/meta/makefile.mk
 
 bin/JIM.8xp: bin/JIM.bin makefile /home/nick/CEdev/meta/makefile.mk
 #  Implicit rule search has not been done.
-#  Last modified 2022-06-22 21:43:52.099235334
+#  File does not exist.
 #  File has been updated.
-#  Successfully updated.
+#  Needs to be updated (-q is set).
 # variable set hash-table stats:
-# Load=0/32=0%, Rehash=0, Collisions=0/2=0%
+# Load=0/32=0%, Rehash=0, Collisions=0/45=0%
 #  recipe to execute (from '/home/nick/CEdev/meta/makefile.mk', line 277):
 	$(Q)$(call MKDIR,$(@D))
 	$(Q)$(CONVBIN) $(CONVBINFLAGS) -i $(call QUOTE_ARG,$(call NATIVEPATH,$<)) -o $(call QUOTE_ARG,$(call NATIVEPATH,$@))
 
 # files hash-table stats:
-# Load=28/1024=3%, Rehash=0, Collisions=0/88=0%
+# Load=20/1024=2%, Rehash=0, Collisions=0/71=0%
 # VPATH Search Paths
 
 # No 'vpath' search paths.
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 52 / storage = 759 B / avg = 14 B
-# current buf: size = 8162 B / used = 759 B / count = 52 / avg = 14 B
+# strcache buffers: 1 (0) / strings = 43 / storage = 500 B / avg = 11 B
+# current buf: size = 8162 B / used = 500 B / count = 43 / avg = 11 B
 
-# strcache performance: lookups = 106 / hit rate = 50%
+# strcache performance: lookups = 93 / hit rate = 53%
 # hash-table stats:
-# Load=52/8192=1%, Rehash=0, Collisions=0/106=0%
-# Finished Make data base on Thu Jun 23 11:39:39 2022
+# Load=43/8192=1%, Rehash=0, Collisions=0/93=0%
+# Finished Make data base on Fri Jun 24 11:59:56 2022
 
  

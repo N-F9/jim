@@ -3,7 +3,7 @@
 # ----------------------------
 
 NAME = JIM
-DESCRIPTION = "JIM"
+DESCRIPTION = "Various math programs"
 COMPRESSED = NO
 ARCHIVED = YES
 
