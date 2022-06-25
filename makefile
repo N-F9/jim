@@ -4,6 +4,7 @@
 
 NAME = JIM
 DESCRIPTION = "Various math programs"
+ICON = icon.png
 COMPRESSED = NO
 ARCHIVED = YES
 
