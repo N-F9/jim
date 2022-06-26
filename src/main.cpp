@@ -29,8 +29,9 @@ int main(void) {
 	render(page, GFX_LCD_WIDTH-GFX_LCD_HEIGHT+BORDERWIDTH, BORDERWIDTH);
 
   while (true) {
-		sk_key_t key;
-    while (key = os_GetCSC() && !os_GetCSC());
+		sk_key_t key = NULL;
+    while (!key)
+			key = os_GetCSC();
 		dbg_printf("%d\n", key);
 		gfx_SetColor(255);
 		gfx_FillRectangle(GFX_LCD_WIDTH-GFX_LCD_HEIGHT+BORDERWIDTH+1, BORDERWIDTH+1, GFX_LCD_HEIGHT-(2 * BORDERWIDTH)-2, GFX_LCD_HEIGHT-(2 * BORDERWIDTH)-2);
@@ -44,7 +45,7 @@ int main(void) {
 			--page;
 		}
 
-		if (key == sk_Down && page < 5) {
+		if (key == sk_Down && page < 4) {
 			++page;
 		}
 
