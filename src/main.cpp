@@ -25,7 +25,6 @@ int main(void) {
 	gfx_PrintStringXY("JIM", 2*BORDERWIDTH, 2*BORDERWIDTH);
 	printList(OPTIONS, BORDERWIDTH);
 
-	
 	render(page, GFX_LCD_WIDTH-GFX_LCD_HEIGHT+BORDERWIDTH, BORDERWIDTH);
 
   while (true) {
@@ -36,10 +35,6 @@ int main(void) {
 		gfx_SetColor(255);
 		gfx_FillRectangle(GFX_LCD_WIDTH-GFX_LCD_HEIGHT+BORDERWIDTH+1, BORDERWIDTH+1, GFX_LCD_HEIGHT-(2 * BORDERWIDTH)-2, GFX_LCD_HEIGHT-(2 * BORDERWIDTH)-2);
 		gfx_SetColor(0);
-		// gfx_FloodFill(GFX_LCD_WIDTH-GFX_LCD_HEIGHT+BORDERWIDTH+1, BORDERWIDTH+1, 0);
-		// gfx_Rectangle(BORDERWIDTH, BORDERWIDTH, GFX_LCD_WIDTH-(2 * BORDERWIDTH), GFX_LCD_HEIGHT-(2 * BORDERWIDTH));
-		// gfx_Rectangle(GFX_LCD_WIDTH-GFX_LCD_HEIGHT+BORDERWIDTH, BORDERWIDTH, GFX_LCD_HEIGHT-(2 * BORDERWIDTH), GFX_LCD_HEIGHT-(2 * BORDERWIDTH));
-		
 
 		if (key == sk_Up && page > 0) {
 			--page;
@@ -55,7 +50,6 @@ int main(void) {
 		}
 		
 		render(page, GFX_LCD_WIDTH-GFX_LCD_HEIGHT+BORDERWIDTH, BORDERWIDTH);
-
 	}
 }
 
