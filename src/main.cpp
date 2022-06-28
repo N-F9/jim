@@ -3,6 +3,11 @@
 #include <debug.h>
 #include <stdlib.h>
 
+/*
+Input
+ https://github.com/CE-Programming/toolchain/tree/master/examples/standalone/os_input
+*/
+
 void printList(char* OPTIONS[], int BORDERWIDTH);
 void render(int page, int x, int y);
 
